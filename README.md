@@ -20,8 +20,8 @@ The centerpiece of this portfolio is a **Root Cause Analysis (RCA) Case Study**,
 ### 1. System Governance & Hierarchy
 I provisioned the osTicket environment by defining a tiered support structure. This involved creating specialized **Departments** (SysAdmin, Support) and assigning granular **Roles** to ensure that sensitive internal data and system settings adhere to the principle of least privilege.
 
-![Installation Success](Asset/01-osticket-install.png)
-![Departments and Roles](Asset/02-departments-roles.png)
+![Installation Success](assets/01-osticket-install.png)
+![Departments and Roles](assets/02-departments-roles.png)
 
 ### 2. Workflow Automation & SLAs
 To maintain organizational uptime, I engineered custom **Service Level Agreements (SLAs)** based on business priority. I implemented **Help Topics** (e.g., *Access Denied / Permissions*) to automate ticket routing, ensuring critical connectivity issues are bypassed to the System Administration team immediately.
