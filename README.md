@@ -26,8 +26,8 @@ I provisioned the osTicket environment by defining a tiered support structure. T
 ### 2. Workflow Automation & SLAs
 To maintain organizational uptime, I engineered custom **Service Level Agreements (SLAs)** based on business priority. I implemented **Help Topics** (e.g., *Access Denied / Permissions*) to automate ticket routing, ensuring critical connectivity issues are bypassed to the System Administration team immediately.
 
-![SLA Configuration](Asset/03-sla-config.png)
-![Help Topic Routing](Asset/04-help-topic-routing.png)
+![SLA Configuration](assets/03-sla-config.png)
+![Help Topic Routing](assets/04-help-topic-routing.png)
 
 ---
 
@@ -38,24 +38,24 @@ To maintain organizational uptime, I engineered custom **Service Level Agreement
 * **Issue:** Remote Desktop Access Denied on workstation `Azure12`.
 * **Action:** The ticket was flagged as an **Emergency SLA** via the automated routing system. The assigned agent immediately acknowledged the ticket to manage the user's expectations.
 
-![Ticket Intake](Asset/05-ticket-intake.png)
-![IT Acknowledgement](Asset/06-it-acknowledgement.png)
+![Ticket Intake](assets/05-ticket-intake.png)
+![IT Acknowledgement](assets/06-it-acknowledgement.png)
 
 ### Phase 2: Root Cause Analysis (RCA)
 As the lead technician, I performed a backend audit of the **Active Directory Administrative Center (ADAC)**. I identified that the user object `Caw.Qovi` was missing from the **Remote Desktop Users** security group, which was the direct cause of the RDP failure.
 
-![Empty Security Group](Asset/07-root-cause-empty-group.png)
+![Empty Security Group](assets/07-root-cause-empty-group.png)
 
 ### Phase 3: Remediation & Internal Documentation
 The fix was implemented by restoring the user to the appropriate security group. All technical steps were documented using **Internal Notes** in osTicket. This ensures that the technical resolution is recorded for the knowledge base without cluttering the end-user's communication thread.
 
-![Security Group Fix](Asset/08-technical-fix-added.png)
-![IT Resolution Documentation](Asset/09-it-resolution-notes.png)
+![Security Group Fix](assets/08-technical-fix-added.png)
+![IT Resolution Documentation](assets/09-it-resolution-notes.png)
 
 ### Phase 4: Final Validation & Closure
 Once the fix was applied, the agent sent a final response and successfully closed the ticket within the SLA window. The user confirmed the restoration of service by successfully logging into the workstation and verifying domain connectivity via ICMP.
 
-![User Success](Asset/10-user-success-connectivity.png)
+![User Success](assets/10-user-success-connectivity.png)
 
 ---
 
