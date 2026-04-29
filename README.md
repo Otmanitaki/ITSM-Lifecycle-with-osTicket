@@ -65,4 +65,4 @@ Once the fix was applied, the agent sent a final response and successfully close
 * **Process Discipline:** Maintained clear communication with stakeholders while documenting technical remediation for internal audits.
 
 ---
-**Developed by [Taki] | Azure Systems & ITSM Operations Portfolio**
+**Developed by [Taki] | Systems Infrastructure & IT Operations Portfolio.**
